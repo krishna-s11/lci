@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Mulish", sans-serif;
+}
+#login {
+  width: 100;
+  position: relative;
+  padding: 55px 0;
+}
+#box1 {
+  width: 421px;
+  height: 837px;
+  background-color: #ef9500;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+#box2 {
+  width: 120px;
+  height: 375px;
+  background-color: #482d00;
+  position: absolute;
+  right: 0;
+  top: 550px;
+  z-index: 0;
+}
+#nav {
+  width: 100%;
+  padding: 15px 120px;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  /* margin-top: 55px; */
+  background-color: #fff;
+}
+#logo {
+  width: 195px;
+  height: 53px;
+}
+#nav_content {
+  width: 791px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav_content ul {
+  display: flex;
+  list-style: none;
+  width: 424px;
+  justify-content: space-between;
+}
+#nav_content ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+.btn {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+}
+#btn_login {
+  padding: 10px 20px;
+  color: #180f00;
+  border: 1px solid #180f00;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+#btn_register {
+  padding: 10px 20px;
+  color: #f2f2f2;
+  background-color: #ef9500;
+  border-radius: 10px;
+}
+#login_box {
+  width: 1040px;
+  height: 865px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0px #00000026;
+  margin: 50px auto;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+#login_box img {
+  width: 580px;
+  height: 865px;
+}
+#login_content_box {
+  width: 100%;
+  background-color: #fdf4e6;
+  box-shadow: -5px 0px 15px 0px #00000026;
+  padding: 96px 80px;
+}
+#login_content_box h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  color: #180f00;
+}
+#login_row {
+  margin-top: 30px;
+}
+#login_row p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #180f00;
+}
+#login_row input {
+  background-color: #fff;
+  width: 310px;
+  height: 50px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #ef9500;
+  margin-top: 5px;
+}
+#btn_login_form {
+  background-color: #ef9500;
+  color: #fff;
+  margin-top: 20px;
+}
+.f_or {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  color: #180f00;
+}
+.btn_social {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 2px 2px 8px 0px #00000026;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.btn_social img {
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 10px;
+}
+#register_here {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #180f00;
+  margin-top: 30px;
+}
+#register_here span {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #ef9500;
+  margin-left: 5px;
+  transform: translateY(-1.7px);
+}
+#footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 120px;
+}
+#footer_top {
+  display: flex;
+}
+#footer_col1 {
+  width: 50%;
+  display: flex;
+}
+#footer_col1_sub1 {
+  width: 70%;
+}
+#footer_col1_sub1 img {
+  width: 195px;
+  height: 52px;
+  margin-bottom: 50px;
+}
+#footer_col1_sub2 p {
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+#footer_col1_sub2 p:last-child {
+  margin-top: 20px;
+}
+#footer_col1_sub1 p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#footer_col2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer_col2 ul {
+  list-style: none;
+}
+#footer_col2 ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+#footer_col2 ul li:not(:first-child) {
+  margin-top: 20px;
+}
+#footer_col2 ul li:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+#footer_bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer_bottom p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#social_links img {
+  margin-left: 30px;
+  cursor: pointer;
+}

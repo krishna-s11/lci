@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Mulish", sans-serif;
+}
+#nav {
+  width: 100%;
+  padding: 15px 120px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  /* margin-top: 55px; */
+  background-color: #fff;
+}
+#logo {
+  width: 195px;
+  height: 53px;
+}
+#nav_content {
+  width: 791px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav_content ul {
+  display: flex;
+  list-style: none;
+  width: 424px;
+  justify-content: space-between;
+}
+#nav_content ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+.btn {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+}
+#btn_login {
+  padding: 10px 20px;
+  color: #180f00;
+  border: 1px solid #180f00;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+#btn_register {
+  padding: 10px 20px;
+  color: #f2f2f2;
+  background-color: #ef9500;
+  border-radius: 10px;
+}
+#hero {
+  width: 100%;
+  background-color: #fff;
+  /* height: 100vh; */
+  display: flex;
+  padding: 70px 120px;
+  position: relative;
+}
+#hero_left {
+  padding-left: 80px;
+  width: 50%;
+}
+#hero_left h1 {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 68px;
+  color: #ef9500;
+  width: 550px;
+}
+#hero_left p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  width: 420px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#btn_together {
+  background-color: #ef9500;
+  color: #fff;
+}
+#hero_right {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+/* #hero_right img {
+  position: relative;
+  z-index: 2;
+} */
+#hero_box1 {
+  width: 229px;
+  height: 229px;
+  background-color: #ef9500;
+  position: absolute;
+  bottom: 250px;
+  left: -50px;
+  z-index: 3;
+}
+#hero_box2 {
+  width: 155px;
+  height: 104px;
+  background-color: #fadfb3;
+  position: absolute;
+  bottom: 220px;
+  left: 100px;
+  z-index: 0;
+}
+#rect {
+  width: 300px;
+  position: absolute;
+  height: 100%;
+  background-color: #ef9500;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#unwavering {
+  width: 100%;
+  padding: 70px 20px;
+}
+#unwavering_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+#unwavering_sub {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 20px auto 90px auto;
+}
+#unwavering_content {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.unwavering_card {
+  width: 270px;
+}
+.unwavering_card img {
+  width: 270px;
+  height: 200px;
+}
+.unwavering_card h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ef9500;
+}
+#partner {
+  max-width: 1200px;
+  background-color: #ef9500;
+  border-radius: 10px;
+  padding: 30px 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#partner h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.btn_positions {
+  background-color: #ffffff;
+  color: #ef9500;
+  font-size: 16px;
+}
+#experience {
+  width: 100%;
+  padding: 70px 120px 50px 120px;
+}
+#experience h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0 auto;
+  width: 900px;
+}
+#experience p {
+  width: 575px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 30px auto;
+}
+#experience_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.experience_card {
+  width: 360px;
+  height: 450px;
+  background-color: #fff;
+  box-shadow: 3px 3px 30px 0px #482d0026;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.experience_card:not(:last-child) {
+  margin-right: 60px;
+}
+.experience_card img {
+  width: 100%;
+  height: 236px;
+  margin-bottom: 20px;
+}
+.experience_card h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ef9500;
+}
+#triumph {
+  width: 100%;
+  /* margin: 50px 20px; */
+  padding: 50px 20px;
+  background-color: #ef9500;
+  position: relative;
+}
+#triumph h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+#video {
+  width: 773px;
+  height: 391px;
+  background-color: #fff;
+  margin: 50px auto;
+}
+#btn_positions {
+  margin: 30px auto;
+  display: flex;
+}
+#bar {
+  width: 375px;
+  height: 60px;
+  background-color: #482d00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+}
+#hiring {
+  width: 100%;
+  padding: 70px 20px;
+}
+#hiring_hero {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+#hiring_hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#hiring_hero h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: right;
+}
+#hiring_hero p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: right;
+}
+#cv_email {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: right;
+  color: #ef9500;
+}
+.hiring_jobs {
+  margin: 50px auto;
+  width: 1040px;
+  background-color: #fdf4e6;
+  box-shadow: 2px 2px 4px 0px #00000026;
+  border-radius: 10px;
+  padding: 60px 50px;
+  display: flex;
+}
+.hiring_job_content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: left;
+  color: #ef9500;
+  margin-bottom: 30px;
+}
+.hiring_job_content p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.hiring_job_content p span {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: right;
+  margin-left: 60px;
+}
+.hiring_jobs img {
+  margin-left: auto;
+  width: 420px;
+  height: 420px;
+}
+.eligibility {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.eligibility p {
+  margin-top: 0;
+  width: 40%;
+}
+.eligibility ul li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+#services h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: left;
+  color: #ef9500;
+}
+#services {
+  margin: 50px auto;
+  width: 1040px;
+  background-color: #fdf4e6;
+  box-shadow: 2px 2px 4px 0px #00000026;
+  border-radius: 10px;
+  padding: 60px 50px;
+}
+#services_container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.job_card {
+  width: 456px;
+  height: 298px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 0px #00000026;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+.job_content_headings {
+  margin-right: 70px;
+}
+.job_content_headings p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.job_content_headings p:not(:first-child) {
+  margin-top: 20px;
+}
+.job_content_info p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+.job_content_info p:not(:first-child) {
+  margin-top: 26px;
+}
+#services_container img {
+  margin-left: 70px;
+}
+#footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 120px;
+}
+#footer_top {
+  display: flex;
+}
+#footer_col1 {
+  width: 50%;
+  display: flex;
+}
+#footer_col1_sub1 {
+  width: 70%;
+}
+#footer_col1_sub1 img {
+  width: 195px;
+  height: 52px;
+  margin-bottom: 50px;
+}
+#footer_col1_sub2 p {
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+#footer_col1_sub2 p:last-child {
+  margin-top: 20px;
+}
+#footer_col1_sub1 p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#footer_col2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer_col2 ul {
+  list-style: none;
+}
+#footer_col2 ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+#footer_col2 ul li:not(:first-child) {
+  margin-top: 20px;
+}
+#footer_col2 ul li:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+#footer_bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer_bottom p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#social_links img {
+  margin-left: 30px;
+  cursor: pointer;
+}

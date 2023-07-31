@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCI - News</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <nav id="nav">
+        <img src="Assets/logo.png" alt="LCI Group Logo" id="logo" />
+        <div id="nav_content">
+        <ul>
+            <li>Recruitment Partners</li>
+            <li>Partner Institutions</li>
+            <li>More <span style="position:absolute; margin-left: 5px; cursor:pointer"><i class="ri-menu-line"></i></span></li>
+            </span>
+        </ul>
+        <div class="action_box">
+            <button id="btn_login" class="btn">Login</button>
+            <button id="btn_register" class="btn">Register</button>
+        </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div id="secure_box">
+            <h1>Secure Your Spot at the Events</h1>
+            <div class="input_row">
+                <p>First Name</p>
+                <input type="text" name="" id="" placeholder="Your First Name">
+            </div>
+            <div class="input_row">
+                <p>Last Name</p>
+                <input type="text" name="" id="" placeholder="Your Last Name">
+            </div>
+            <div class="input_row">
+                <p>Email</p>
+                <input type="email" name="" id="" placeholder="Your Email Address">
+            </div>
+            <div class="input_row">
+                <p>Events</p>
+                <select name="" id="" required>
+                    <option value="" disabled selected>Month, DD, YY - Location</option>
+                </select>
+            </div>
+            <div class="input_row">
+                <p>Desired Course Level</p>
+                <select name="" id="" required>
+                    <option value="" disabled selected>Foundation</option>
+                </select>
+            </div>
+            <p id="text_option">What type of emails do you want to receive?</p>
+            <div style="width: 100%; display:flex; justify-content: space-between; margin-top: 15px;; color: #5E6366"> 
+                <input type="checkbox" id="events" name="events" value="Events">
+                <label for="events">Events</label><br>
+                <input type="checkbox" id="education" name="education" value="Education">
+                <label for="education">Education</label><br>
+                <input type="checkbox" id="recruitment" name="recruitment" value="Recruitment">
+                <label for="recruitment">Recruitment</label><br>
+            </div>
+            <button class="btn" id="btn_secure">Secure your spot</button>
+        </div>
+    </section>
+    <section id="explore">
+        <h1 id="expore_title">Explore Our Latest Events</h1>
+        <p id="explore_sub">Uncover Our Newest and Upcoming Events in Your Vicinity.</p>
+        <div id="explore_content">
+            <div class="explore_card">
+                <img src="Assets/event1.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>January 8, 2022</p>
+                <p>Kuala Lampur, Malaysia</p>
+            </div>
+            <div class="explore_card">
+                <img src="Assets/event2.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>December 18, 2021</p>
+                <p>New Delhi, India</p>
+            </div>
+            <div class="explore_card">
+                <img src="Assets/event3.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>December 14, 2021</p>
+                <p>Karachi, Pakistan</p>
+            </div>
+            <div class="explore_card">
+                <img src="Assets/event4.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>November 19, 2021</p>
+                <p>Kuala Lumpur, Malaysia</p>
+            </div>
+            <div class="explore_card">
+                <img src="Assets/event5.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>October 20, 2021</p>
+                <p>Punjab, India</p>
+            </div>
+            <div class="explore_card">
+                <img src="Assets/event6.png" alt="">
+                <h2>LCI Malaysia - Event</h2>
+                <p>February 25, 2021</p>
+                <p>Kathmandu, Nepal</p>
+            </div>
+        </div>
+    </section>
+    <section id="journey">
+        <h1>Journey into the Future: Our Upcoming Events</h1>
+        <div id="journey_content">
+            <div class="journey_card">
+                <div style="width: 100%; height: 260px; background-color: #FDF4E6">
+                    <img src="Assets/journey_logo.png" alt="">
+                </div>
+                <h2>Event Title</h2>
+                <p>Date</p>
+                <p>Location</p>
+            </div>
+            <div class="journey_card">
+                <div style="width: 100%; height: 260px; background-color: #FDF4E6">
+                    <img src="Assets/journey_logo.png" alt="">
+                </div>
+                <h2>Event Title</h2>
+                <p>Date</p>
+                <p>Location</p>
+            </div>
+            <div class="journey_card">
+                <div style="width: 100%; height: 260px; background-color: #FDF4E6">
+                    <img src="Assets/journey_logo.png" alt="">
+                </div>
+                <h2>Event Title</h2>
+                <p>Date</p>
+                <p>Location</p>
+            </div>
+        </div>
+    </section>
+    <section id="establishment">
+        <h1>Establishing a Foundation of Trust and Reliability in Our Relationship</h1>
+        <div id="establishment_content">
+            <svg width="61" height="48" viewBox="0 0 61 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 48V31.9412C0.5 25.9412 1.56195 20.4118 3.68584 15.3529C5.80973 10.2941 9.40856 5.17647 14.4823 0L23.6858 7.23529C19.91 11.1176 17.2552 14.7059 15.7212 18C14.1873 21.2941 13.4204 24.8235 13.4204 28.5882L7.93363 23.4706H25.2788V48H0.5ZM35.7212 48V31.9412C35.7212 25.9412 36.7832 20.4118 38.9071 15.3529C41.031 10.2941 44.6298 5.17647 49.7035 0L58.9071 7.23529C55.1313 11.1176 52.4764 14.7059 50.9425 18C49.4086 21.2941 48.6416 24.8235 48.6416 28.5882L43.1549 23.4706H60.5V48H35.7212Z" fill="white"/>
+                </svg>
+            <p>LCI Group has been instrumental in expanding my student reach, enabling me to connect with a larger audience. Additionally, it has enriched my ability to provide my students with a wider range of school options. The added advantage of LCI assessing student eligibility brings reassurance and peace of mind to both myself and my students.</p>
+            <p>Jane Doe, <br>Recruitment partner company name</p>
+        </div>
+        <img src="Assets/est_people.png" alt="">
+    </section>
+    <section id="insights">
+        <div id="insights_header">
+            <h1>Insights</h1>
+            <button class="btn" id="btn_insights">Read our insights</button>
+        </div>
+        <div id="insights_container">
+            <div class="insight_box">
+                <img src="Assets/insigth1.png" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Pulvinar ac convallis amet ornare -></p>
+            </div>
+            <div class="insight_box">
+                <img src="Assets/insight2.png" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Pulvinar ac convallis amet ornare -></p>
+            </div>
+            <div class="insight_box">
+                <img src="Assets/insight3.png" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Pulvinar ac convallis amet ornare -></p>
+            </div>
+            <div class="insight_box">
+                <img src="Assets/insight4.png" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Pulvinar ac convallis amet ornare -></p>
+            </div>
+
+        </div>
+    </section>
+    <section id="join_network">
+        <h1>Join a Global Network of 15,000+ Recruitment Partners and Amplify Your Impact</h1>
+        <button class="btn" id="btn_together">Together Towards Triumph</button>
+        <img src="Assets/together_network.png" alt="">
+    </section>
+    <footer id="footer">
+        <div id="footer_top">
+            <div id="footer_col1">
+                <div id="footer_col1_sub1">
+                    <img src="Assets/logo.png" alt="">
+                    <p>Head Office address: </p>
+                    <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur. Pulvinar ac convallis amet ornare</p>
+                </div>
+                <div id="footer_col1_sub2">
+                    <p>Recruitment Partners</p>
+                    <p>Partner Institutions</p>
+                </div>
+            </div>
+            <div id="footer_col2">
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Story</li>
+                    <li>Leadership</li>
+                    <li>Blog</li>
+                    <li>News</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li>Our Services</li>
+                    <li>Counselling & Admissions</li>
+                    <li>Review & Lodgement</li>
+                    <li>Offer & Acceptance</li>
+                    <li>Visa Application</li>
+                    <li>University & Institution Confirmation</li>
+                </ul>
+                <ul>
+                    <li>Legal</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <p>Copyright 2023 @ LCI Group. All rights reserved</p>
+            <div id="social_links">
+                <img src="Assets/fb.png" alt="">
+                <img src="Assets/linkedin.png" alt="" srcset="">
+                <img src="Assets/insta.png" alt="" srcset="">
+                <img src="Assets/twitter.png" alt="" srcset="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
