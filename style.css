@@ -6,6 +6,7 @@
 html,
 body {
   font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
 }
 #hero {
   width: 100%;
@@ -97,6 +98,47 @@ body {
   color: #f2f2f2;
   background-color: #ef9500;
   border-radius: 10px;
+}
+#nav_mob {
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #fadfb3;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding-top: 50px;
+  transition: all 0.3 ease;
+}
+#nav_mob_content {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+#nav_mob_content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#btn_mob_login {
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid #180f00;
+  margin-top: 25px;
+}
+#btn_mob_register {
+  width: 250px;
+  background-color: #fdf4e6;
+  margin-top: 25px;
+}
+#nav_mob_content img {
+  width: 195px;
+  height: 52px;
+  margin-top: 50px;
 }
 #hero_content {
   width: 1100px;
@@ -761,4 +803,18 @@ body {
 #social_links img {
   margin-left: 30px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  #nav {
+    padding: 15px 20px;
+  }
+  #box1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #nav_content {
+    display: none;
+  }
 }
