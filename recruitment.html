@@ -5,28 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCI - Recruitment Partners</title>
     <link rel="stylesheet" href="recruitment.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
+    <div id="nav_mob">
+        <img src="Assets/close-fill.png" alt="" id="close_btn" style="width: 24px; height: 24px; margin-left: auto; display: flex;margin-right: 25px;cursor:pointer;">
+        <div id="nav_mob_content">
+            <p>Recruitment Partners</p>
+            <p>Partner Institutions</p>
+            <button class="btn" id="btn_mob_login">Login</button><br>
+            <button class="btn" id="btn_mob_register">Register</button>
+            <p>About Us</p>
+            <p>Our Leadership</p>
+            <p>Our Services</p>
+            <p>News</p>
+            <p>Blog</p>
+            <p>Career</p>
+            <img src="Assets/logo.png" alt="">
+        </div>
+    </div>
     <nav id="nav">
-        <img src="Assets/logo.png" alt="LCI Group Logo" id="logo" />
-        <div id="nav_content">
-        <ul>
-            <li>Recruitment Partners</li>
-            <li>Partner Institutions</li>
-            <li>More <span style="position:absolute; margin-left: 5px; cursor:pointer"><i class="ri-menu-line"></i></span></li>
-            </span>
-        </ul>
-        <div class="action_box">
-            <button id="btn_login" class="btn">Login</button>
-            <button id="btn_register" class="btn">Register</button>
-        </div>
-        </div>
-        </nav>
+    <img src="Assets/logo.png" alt="LCI Group Logo" id="logo" />
+    <div id="nav_content">
+    <ul>
+        <li>Recruitment Partners</li>
+        <li>Partner Institutions</li>
+        <li>More <span style="position:absolute; margin-left: 5px; cursor:pointer"><i class="ri-menu-line"></i></span></li>
+        </span>
+    </ul>
+    <div class="action_box">
+        <button id="btn_login" class="btn">Login</button>
+        <button id="btn_register" class="btn">Register</button>
+    </div>
+    </div>
+    <span style="cursor:pointer;" id="ham"><i class="ri-menu-line"></i></span>
+    </nav>
     <section id="hero">
         <div id="hero_left">
             <h1>Achieving Greatness Together: Supporting Your Success at Every Step</h1>
             <p>Enabling Your Impact: Helping You Realize Students' International Education Ambitions</p>
-            <button class="btn" id="btn_together">Together We Thrive</button>
+            <button class="btn" id="btn_together_hero">Together We Thrive</button>
         </div>
         <div id="hero_right">
             <img src="Assets/recruitment_hero.png" alt="" srcset="">
@@ -107,9 +128,9 @@
             <p>Country Name</p>
             <p>Country Name</p>
             <p>Country Name</p>
-            <p>Country Name</p>
-            <p>Country Name</p>
-            <p>Country Name</p>
+            <p id="conn_box_cont_1">Country Name</p>
+            <p id="conn_box_cont_2">Country Name</p>
+            <p id="conn_box_cont_3">Country Name</p>
         </div>
         <img src="Assets/lci_partners.png" alt="" srcset="">
     </section>
@@ -175,5 +196,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
