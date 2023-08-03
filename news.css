@@ -6,6 +6,7 @@
 html,
 body {
   font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
 }
 #nav {
   width: 100%;
@@ -65,6 +66,50 @@ body {
   background-color: #ef9500;
   border-radius: 10px;
 }
+#nav_mob {
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #fadfb3;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding-top: 50px;
+  transition: all 0.3 ease;
+}
+#ham {
+  display: none;
+}
+#nav_mob_content {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+#nav_mob_content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#btn_mob_login {
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid #180f00;
+  margin-top: 25px;
+}
+#btn_mob_register {
+  width: 250px;
+  background-color: #fdf4e6;
+  margin-top: 25px;
+}
+#nav_mob_content img {
+  width: 195px;
+  height: 52px;
+  margin-top: 50px;
+}
 #hero {
   width: 100%;
   background-color: #fceacc;
@@ -106,6 +151,7 @@ body {
   border: none;
   font-size: 16px;
   margin-top: 5px;
+  background-color: transparent;
 }
 .input_row select:invalid {
   color: gray;
@@ -143,10 +189,10 @@ body {
   margin-bottom: 60px;
 }
 #explore_content {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .explore_card {
@@ -157,6 +203,7 @@ body {
   box-shadow: 3px 3px 30px 0px #482d0026;
   overflow: hidden;
   margin-bottom: 50px;
+  margin-right: 30px;
 }
 .explore_card img {
   width: 100%;
@@ -186,10 +233,11 @@ body {
   margin: 0 auto;
 }
 #journey_content {
-  width: 1200px;
+  width: 100%;
   margin: 70px auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .journey_card {
   width: 360px;
@@ -198,6 +246,8 @@ body {
   background-color: #fff;
   box-shadow: 3px 3px 30px 0px #482d0026;
   overflow: hidden;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 .journey_card img {
   width: 285px;
@@ -279,9 +329,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .insight_box {
   width: 340px;
+  margin-top: 40px;
 }
 .insight_box img {
   width: 340px;
@@ -296,7 +348,7 @@ body {
 #join_network {
   width: 100%;
   background-color: #fceacc;
-  padding-top: 60px;
+  padding: 60px 20px;
 }
 #join_network h1 {
   font-size: 40px;
@@ -304,8 +356,9 @@ body {
   line-height: 60px;
   letter-spacing: 0em;
   text-align: center;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto 30px auto;
+  width: 880px;
 }
 #btn_together {
   background-color: #ef9500;
@@ -387,4 +440,210 @@ body {
 #social_links img {
   margin-left: 30px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1100px) {
+  #nav {
+    padding: 15px 20px;
+  }
+  #establishment {
+    width: 100%;
+    background-color: #fceacc;
+    padding: 70px 20px;
+  }
+  #establishment h1 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #join_network {
+    width: 100%;
+    background-color: #fceacc;
+    padding-top: 60px 20px;
+  }
+  #join_network h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+  #footer_top {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer_col1 {
+    width: 100%;
+    display: flex;
+  }
+  #footer_col2 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #nav_content {
+    display: none;
+  }
+  #nav {
+    background-color: transparent;
+  }
+  #ham {
+    display: block;
+  }
+  #establishment_content {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ef9500;
+    box-shadow: 0px 4px 30px 0px #180f0033;
+    margin: 50px auto;
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+  }
+  #insights_container {
+    justify-content: center;
+  }
+  #join_network h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 719px) {
+  #footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #hero {
+    width: 100%;
+    background-color: #fceacc;
+    padding: 50px 20px;
+  }
+  #secure_box {
+    width: 350px;
+    height: 690px;
+    border-radius: 10px;
+    padding: 40px 20px;
+    border: 1px solid #dde2e5;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  #secure_box h1 {
+    font-size: 20px;
+  }
+  .input_row {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #dde2e5;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .explore_card {
+    margin-right: 0;
+  }
+  #expore_title {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  #explore_sub {
+    font-size: 20px;
+  }
+  .journey_card {
+    margin-right: 0;
+  }
+  #journey h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .journey_card {
+    width: 350px;
+  }
+  #establishment h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  #establishment_content {
+    padding: 60px 20px;
+  }
+  #establishment_content p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  #establishment img {
+    margin: 0 auto;
+    display: flex;
+    width: 214px;
+  }
+  #insights {
+    padding: 80px 20px !important;
+  }
+  #insights_header {
+    flex-direction: column;
+  }
+  #btn_insights {
+    margin-top: 30px;
+  }
+  #join_network h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  #join_network img {
+    width: 100%;
+    margin-top: 100px;
+    transform: scale(1.4) translateY(-30px);
+  }
+  #footer_col2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #footer_col2 ul {
+    list-style: none;
+    margin-top: 30px;
+  }
+  #footer_bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #social_links {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #footer_col1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer_col1_sub2 p {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
 }
