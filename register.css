@@ -88,6 +88,50 @@ body {
   background-color: #ef9500;
   border-radius: 10px;
 }
+#nav_mob {
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #fadfb3;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding-top: 50px;
+  transition: all 0.3 ease;
+}
+#ham {
+  display: none;
+}
+#nav_mob_content {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+#nav_mob_content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#btn_mob_login {
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid #180f00;
+  margin-top: 25px;
+}
+#btn_mob_register {
+  width: 250px;
+  background-color: #fdf4e6;
+  margin-top: 25px;
+}
+#nav_mob_content img {
+  width: 195px;
+  height: 52px;
+  margin-top: 50px;
+}
 #login_box {
   width: 1040px;
   height: 1560px;
@@ -156,6 +200,9 @@ body {
   border: 1px solid #ef9500;
   margin-top: 5px;
   box-shadow: 2px 2px 8px 0px #00000026;
+}
+#login_row select {
+  background-color: #fff;
 }
 #btn_login_form {
   background-color: #ef9500;
@@ -292,4 +339,174 @@ body {
   outline: 1px solid #ef9500;
   margin-top: 5px;
   box-shadow: 2px 2px 8px 0px #00000026;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1100px) {
+  #nav {
+    padding: 15px 20px;
+  }
+  #login_box {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px 0px #00000026;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    align-items: center;
+  }
+  #register_img2 {
+    display: none;
+  }
+  #register_img3 {
+    display: none;
+  }
+  #register_img4 {
+    display: none;
+  }
+  #login_content_box {
+    width: 580px;
+    border-radius: 10px;
+    margin-top: -50px;
+    background-color: #fdf4e6;
+    box-shadow: -5px 0px 15px 0px #00000026;
+    padding: 96px 70px;
+    margin-bottom: 100px;
+  }
+  #login_box img {
+    border-radius: 10px;
+  }
+  #login_row input {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #ef9500;
+    margin-top: 5px;
+    box-shadow: 2px 2px 8px 0px #00000026;
+  }
+  #login_row select {
+    background-color: #fff;
+    width: 100%;
+  }
+  #btn_login_form {
+    background-color: #ef9500;
+    color: #fff;
+    margin-top: 20px;
+    width: 310px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+  #ensure {
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #ef9500;
+    border-radius: 10px;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  #contact {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #login_content_box h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  #footer_top {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer_col1 {
+    width: 100%;
+    display: flex;
+  }
+  #footer_col2 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #nav_content {
+    display: none;
+  }
+  #nav {
+    background-color: transparent;
+  }
+  #ham {
+    display: block;
+  }
+}
+@media only screen and (max-width: 719px) {
+  #footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #login_box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #login_content_box {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -50px;
+    background-color: #fdf4e6;
+    box-shadow: -5px 0px 15px 0px #00000026;
+    padding: 96px 20px;
+    margin-bottom: 100px;
+  }
+  #login_box img {
+    width: 100%;
+  }
+  #footer_col2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #footer_col2 ul {
+    list-style: none;
+    margin-top: 30px;
+  }
+  #footer_bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #social_links {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #footer_col1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer_col1_sub2 p {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
 }

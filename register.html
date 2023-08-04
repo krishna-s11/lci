@@ -5,26 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCI Group - Register</title>
     <link rel="stylesheet" href="register.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
 </head>
 <body>
     <main id="login">
       <div id="box1"></div>
       <div id="box2"></div>
-      <nav id="nav">
-        <img src="Assets/logo.png" alt="LCI Group Logo" id="logo" />
-        <div id="nav_content">
-        <ul>
-            <li>Recruitment Partners</li>
-            <li>Partner Institutions</li>
-            <li>More <span style="position:absolute; margin-left: 5px; cursor:pointer"><i class="ri-menu-line"></i></span></li>
-            </span>
-        </ul>
-        <div class="action_box">
-            <button id="btn_login" class="btn">Login</button>
-            <button id="btn_register" class="btn">Register</button>
+      <div id="nav_mob">
+        <img src="Assets/close-fill.png" alt="" id="close_btn" style="width: 24px; height: 24px; margin-left: auto; display: flex;margin-right: 25px;cursor:pointer;">
+        <div id="nav_mob_content">
+            <p>Recruitment Partners</p>
+            <p>Partner Institutions</p>
+            <button class="btn" id="btn_mob_login">Login</button><br>
+            <button class="btn" id="btn_mob_register">Register</button>
+            <p>About Us</p>
+            <p>Our Leadership</p>
+            <p>Our Services</p>
+            <p>News</p>
+            <p>Blog</p>
+            <p>Career</p>
+            <img src="Assets/logo.png" alt="">
         </div>
-        </div>
-        </nav>
+    </div>
+    <nav id="nav">
+    <img src="Assets/logo.png" alt="LCI Group Logo" id="logo" />
+    <div id="nav_content">
+    <ul>
+        <li>Recruitment Partners</li>
+        <li>Partner Institutions</li>
+        <li>More <span style="position:absolute; margin-left: 5px; cursor:pointer"><i class="ri-menu-line"></i></span></li>
+        </span>
+    </ul>
+    <div class="action_box">
+        <button id="btn_login" class="btn">Login</button>
+        <button id="btn_register" class="btn">Register</button>
+    </div>
+    </div>
+    <span style="cursor:pointer;" id="ham"><i class="ri-menu-line"></i></span>
+    </nav>
       <div id="login_box">
         <div>
             <img src="Assets/register1.png" id="register_img1" alt="">
@@ -153,5 +174,6 @@
         </div>
     </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
